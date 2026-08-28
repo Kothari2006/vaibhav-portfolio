@@ -4,14 +4,8 @@ function Projects() {
       icon: "🚑",
       title: "Advanced Ambulance Route Optimizer",
       description:
-        "An emergency route planning system that finds optimal ambulance routes using Dijkstra's shortest-path algorithm. It includes traffic simulation, route visualization and hospital and ambulance station management.",
-      tech: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Dijkstra",
-        "Graph Algorithms",
-      ],
+        "A web-based emergency route planning system that calculates the shortest ambulance route using Dijkstra's Algorithm with dynamic traffic simulation and interactive graph visualization.",
+      tech: ["HTML5", "CSS3", "JavaScript", "Dijkstra", "MySQL"],
       github:
         "https://github.com/Kothari2006/ambulance-routing-system",
       live:
@@ -22,49 +16,32 @@ function Projects() {
       icon: "🎵",
       title: "SoundStack",
       description:
-        "An AI-powered full-stack music assistant that provides personalized music recommendations through a modern conversational interface with direct YouTube links.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "Node.js",
-        "Express.js",
-        "Groq",
-      ],
+        "An AI-powered full-stack music assistant that provides personalized song recommendations and direct YouTube links through a modern conversational interface.",
+      tech: ["React", "Tailwind CSS", "Node.js", "Express.js", "Groq"],
       github:
         "https://github.com/Kothari2006/SoundStack",
-      live: null,
+      live:
+        "https://sound-stack-sepia.vercel.app/",
     },
 
     {
       icon: "💻",
       title: "CodeVault",
       description:
-        "A code snippet management platform designed to help developers create, discover, organize and manage useful code snippets with search, filtering and favorites.",
-      tech: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-      ],
+        "A modern platform for sharing, discovering and managing code snippets with search, filtering, favorites, code validation, responsive design and a MongoDB backend.",
+      tech: ["HTML5", "CSS3", "JavaScript", "Node.js", "MongoDB"],
       github:
         "https://github.com/Kothari2006/CodeVault",
-      live: null,
+      live:
+        "https://code-vault-vaibhav.vercel.app/",
     },
 
     {
       icon: "🗂️",
       title: "File Recovery & Optimization Tool",
       description:
-        "A Windows desktop utility for file scanning, deletion monitoring, file recovery, storage optimization and real-time CPU and RAM monitoring.",
-      tech: [
-        "Python",
-        "PyQt5",
-        "psutil",
-        "watchdog",
-        "pyqtgraph",
-      ],
+        "A Windows desktop utility for scanning files, monitoring deletion events, recovering files from the Recycle Bin, optimizing storage and monitoring system resources.",
+      tech: ["Python", "PyQt5", "psutil", "watchdog", "pyqtgraph"],
       github:
         "https://github.com/Kothari2006/file_recovery",
       live: null,
@@ -72,12 +49,7 @@ function Projects() {
   ];
 
   return (
-    <section
-      className="projects"
-      id="projects"
-    >
-
-      {/* SECTION HEADER */}
+    <section className="projects">
 
       <p className="section-tag projects-tag">
         MY WORK
@@ -88,35 +60,23 @@ function Projects() {
       </h2>
 
       <p className="projects-intro">
-        A collection of projects I have built while exploring
-        web development, full-stack development, algorithms,
-        databases and practical software solutions.
+        A selection of projects I have built while exploring web development,
+        algorithms, backend systems and practical software solutions.
       </p>
-
-
-      {/* PROJECT CARDS */}
 
       <div className="projects-container">
 
         {projects.map((project) => (
-
           <div
             className="project-card"
             key={project.title}
           >
 
-            {/* PROJECT ICON */}
-
             <div className="project-image">
-
               <div className="project-icon">
                 {project.icon}
               </div>
-
             </div>
-
-
-            {/* PROJECT INFORMATION */}
 
             <div className="project-content">
 
@@ -128,23 +88,15 @@ function Projects() {
                 {project.description}
               </p>
 
-
-              {/* TECHNOLOGIES */}
-
               <div className="project-tech">
 
                 {project.tech.map((technology) => (
-
                   <span key={technology}>
                     {technology}
                   </span>
-
                 ))}
 
               </div>
-
-
-              {/* PROJECT LINKS */}
 
               <div className="project-buttons">
 
@@ -157,9 +109,7 @@ function Projects() {
                   GitHub ↗
                 </a>
 
-
                 {project.live && (
-
                   <a
                     href={project.live}
                     target="_blank"
@@ -168,7 +118,6 @@ function Projects() {
                   >
                     Live Demo ↗
                   </a>
-
                 )}
 
               </div>
@@ -176,13 +125,9 @@ function Projects() {
             </div>
 
           </div>
-
         ))}
 
       </div>
-
-
-      {/* ALL PROJECTS */}
 
       <div className="all-projects">
 
