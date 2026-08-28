@@ -3,31 +3,31 @@ import { Link } from "react-router-dom";
 function Services() {
   const services = [
     {
-      icon: "</>",
-      title: "UI/UX Design",
+      icon: "⚙",
+      title: "DevOps Engineering",
       description:
-        "I create clean, modern and user-friendly interfaces with a strong focus on usability, visual design, responsiveness and smooth user experience.",
+        "I work with DevOps practices to automate development workflows, manage deployments and improve software delivery using modern tools and automation.",
     },
 
     {
-      icon: "◈",
-      title: "Web Development",
+      icon: "⟳",
+      title: "CI/CD & Automation",
       description:
-        "I build responsive and interactive websites using HTML, CSS, JavaScript and React with clean structure, modern design and performance in mind.",
+        "I build automated CI/CD pipelines to streamline code integration, testing, deployment and software delivery.",
     },
 
     {
       icon: "⚡",
-      title: "Full Stack Development",
+      title: "DevOps Tools & Deployment",
       description:
-        "I develop complete web applications by working with frontend interfaces, backend APIs, databases and modern full stack technologies.",
+        "I use modern DevOps tools and deployment practices to improve development workflows and deliver software efficiently.",
     },
 
     {
       icon: "⌘",
       title: "Software Development",
       description:
-        "I enjoy building practical software solutions that solve real-world problems using programming, data structures, algorithms and problem-solving techniques.",
+        "I build practical software solutions using programming, data structures, algorithms and problem-solving techniques.",
     },
   ];
 
@@ -41,7 +41,6 @@ function Services() {
       <h2>
         My <span>Services</span>
       </h2>
-
 
       <div className="services-container">
 
